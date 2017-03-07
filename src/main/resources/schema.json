@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "TradeMessage",
+    "description": "A trade message",
+    "type": "object",
+    "properties": {
+        "userId": {"type": "string"},
+        "currencyFrom": {"type": "string"},
+        "currencyTo": {"type": "string"},
+        "amountSell": {"type": "integer"},
+        "amountBuy": {"type": "integer"},
+        "rate": {"type": "number", "minimum": 0,"maximum": 10.0,
+            "exclusiveMinimum": true},
+        "timePlaced": { "type": "string" },
+        "originatingCountry": {"type": "string"}
+    },
+    "required": ["userId", "currencyFrom", "currencyTo","amountSell","amountBuy","rate","timePlaced","originatingCountry"]
+}
