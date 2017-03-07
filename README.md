@@ -15,4 +15,5 @@ io.socket - for an attempt to implement socket.io
 It is all available under a Tomcat7 web application server.
 
 In order to execute and set the server up:
+
 mvn clean install tomcat7:run
